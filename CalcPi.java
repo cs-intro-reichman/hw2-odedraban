@@ -3,6 +3,7 @@ public class CalcPi {
 	public static void main(String [] args) { 
 	    int termNum = Integer.parseInt(args[0]);
 		double sum = 0.0;
+		if (termNum == 1) sum = 1.0;
 		if ((termNum % 2) == 0){
 			double plusDenominator = 1.0;
 			for (int i = 0; i < (termNum / 2); i++){
