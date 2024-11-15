@@ -19,12 +19,12 @@ public class CalcPi {
 		else {
 			if ((termNum % 2) != 0){
 				double plusDenominator = 1.0;
-				for (int i = 0; i < (termNum / 2); i++){
+				for (int i = 0; i < ((termNum + 1) / 2); i++){
 					sum += (1.0 / plusDenominator);
 					plusDenominator = plusDenominator + 4.0;
 				}
 				double minusDenominator = 3.0;
-				for (int j = 0; j < ((termNum / 2) - 1); j++){
+				for (int j = 0; j < (termNum / 2); j++){
 					sum -= (1.0 / minusDenominator);
 					minusDenominator = minusDenominator + 4.0;
 				}
