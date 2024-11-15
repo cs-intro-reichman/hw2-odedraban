@@ -5,6 +5,7 @@ public class Cheers {
             String UpperCaseWord = word.toUpperCase();
             int repeatNum = Integer.parseInt(args[1]);
             String anLetters = "AEFHILMNORSX";
+
             for (int i = 0; i < word.length(); i++){
                 if (anLetters.indexOf(UpperCaseWord.charAt(i)) == -1){
                         System.out.println("Give me a  " + UpperCaseWord.charAt(i) + ": " + UpperCaseWord.charAt(i) + "!");
@@ -14,6 +15,7 @@ public class Cheers {
 
                 }
                 }
+                
                 System.out.println("What does that spell?");
                 for (int j = 0; j < repeatNum; j++){
                         System.out.println(UpperCaseWord + "!!!");

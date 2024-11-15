@@ -4,6 +4,7 @@ public  class  TestRandom {
 		int N = Integer.parseInt(args[0]);
 		int lessEqualCount = 0;
 		int greatCount = 0;
+
 		for (int i = 0; i < N; i++){
 			if (Math.random () > 0.5) greatCount++;
 			else lessEqualCount++;
@@ -11,6 +12,7 @@ public  class  TestRandom {
 		if ((lessEqualCount != 0) && (greatCount != 0)){
 			System.out.println("> 0.5:   " + greatCount + " times");
 			System.err.println("<= 0.5:  " + lessEqualCount + " times");
+			
 			double ratio = Math.min(((((double)greatCount) / (double)lessEqualCount)), (((double)lessEqualCount) / (double)greatCount));
 			System.err.println("Ratio:   " + ratio);
 		} 
